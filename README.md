@@ -64,26 +64,26 @@ src/
 
 🔹 How to Run the Project
 
-Clone the repository
+Clone the repository:
 
 git clone https://github.com/Safin-Sulthan/mini-atm-react-redux.git
 
 
-Navigate to the project directory
+Navigate to the project directory:
 
 cd mini-atm-react-redux
 
 
-Install dependencies
+Install dependencies:
 
 npm install
 
 
-Start the application
+Start the application:
 
 npm start
 
-🔹 Learning Outcome
+🔹 Learning Outcome:
 
 This project helped me understand:
 
@@ -95,7 +95,7 @@ How to design clean and predictable UI logic
 
 How to structure a small-to-medium React project
 
-🔹 Future Enhancements
+🔹 Future Enhancements:
 
 Persist account data using localStorage
 
