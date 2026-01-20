@@ -1,0 +1,64 @@
+.balance-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balance-card {
+  background-color: rgba(57, 52, 52, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+}
+.balance-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.balance-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+.balance-body {
+  padding: 15px;
+}
+.balance-body h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.balance-body h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(93, 202, 93, 0.8);
+  background: transparent;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.balance-footer {
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .balance-body {
+    text-align: center;
+  }
+}

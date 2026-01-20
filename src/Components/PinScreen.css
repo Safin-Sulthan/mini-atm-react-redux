@@ -1,0 +1,117 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: block;
+  background-color: rgba(57, 52, 52, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+.card-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  gap: 25px;
+}
+.cardbody-left {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  flex: 1;
+}
+.cardbody-left p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.cardbody-left input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  background-color: #f9fafb;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+.cardbody-right {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.animation {
+  width: 150px;
+  height: 150px;
+}
+
+.card-footer {
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+.login-button {
+  width: 100%;
+  height: 44px;
+  max-width: 180px;
+  background-color: #2564eb7a;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #234acd;
+}
+
+@media (max-width: 600px) {
+  .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardbody-right {
+    justify-content: center;
+  }
+
+  .animation {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,68 @@
+.ministatement-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ministatement-card {
+  background-color: rgba(57, 52, 52, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+}
+.ministatement-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.ministatement-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.ministatement-body {
+  padding: 15px;
+}
+.ministatement-body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
+  margin-bottom: 12px;
+}
+
+.ministatement-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ministatement-body li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ministatement-footer {
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .ministatement-body {
+    text-align: center;
+  }
+}
