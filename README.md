@@ -1,129 +1,135 @@
-<<<<<<< HEAD
-🔹 Project Overview
+# Mini ATM Application 💳
 
-The Mini ATM Application is a frontend project built using React and Redux to simulate basic ATM functionalities.
-It focuses on state management, UI logic, and clean component-based architecture, making it suitable for demonstrating beginner-to-intermediate frontend skills.
+A **single-page, single-account Mini ATM application** built using **React and Redux**.  
+This is my **first complete project after learning the fundamentals of React and Redux**.
 
-This project was built incrementally to practice real-world React development patterns such as global state management, conditional rendering, and user feedback handling.
+---
 
-🔹 Features
+## 🔹 Project Description
 
-🔐 User login with PIN validation
+This project simulates the core functionality of an ATM for **one user account**.  
+All operations are handled within a **single-page React application**, where different screens are rendered conditionally without using routing.
 
-📊 Dashboard with ATM options
+The goal of this project was to apply **React component logic**, **Redux state management**, and **CSS layout handling** in a practical, end-to-end application.
 
-💰 Deposit money
+---
 
-💸 Withdraw money with balance validation
+## 🔹 Key Characteristics
 
-🧾 View account balance
+- 🧑‍💼 **Single ATM account** (one user, one balance)
+- 🧭 **Single-page application** (no React Router)
+- 🔄 Screen switching handled using component state
+- 🎯 Focused on fundamentals, not advanced patterns
 
-📄 Mini statement (transaction history)
+---
 
-✅ Inline success and error messages (no browser alerts)
+## 🔹 Features
 
-🎨 Clean UI with glassmorphism-style cards
+- 🔐 PIN-based login authentication
+- 💰 Deposit money into the account
+- 💸 Withdraw money from the account
+- 📊 Check current account balance
+- 🧾 View mini statement (transaction history)
+- 🔄 Centralized state management using Redux
+- 🎨 Glassmorphism-style UI
+- 📱 Basic responsive design
 
-🔹 Tech Stack
+---
 
-React – UI development
+## 🔹 Tech Stack
 
-Redux – Global state management
+- **Frontend:** React
+- **State Management:** Redux
+- **Styling:** CSS
+- **Version Control:** Git & GitHub
 
-JavaScript (ES6+)
+---
 
-CSS3 – Styling and layout
+## 🔹 Learning Context
 
-🔹 Concepts Demonstrated
+This is my **first hands-on project after learning React and Redux**, built to strengthen my understanding of:
 
-Local state vs global state
+- React functional components
+- useState for UI control
+- Conditional rendering for screen navigation
+- Redux store, reducers, and global state
+- Handling shared state like balance and transactions
+- Separating layout responsibility between components
+- Debugging real-world UI and CSS issues
+- Maintaining clean Git commits
 
-Redux store, reducers, and actions
+---
 
-Conditional rendering in React
+## 🔹 Project Structure (Simplified)
 
-Controlled form inputs
-
-Component-based UI design
-
-Basic UX principles (user feedback, validation)
-
-🔹 Project Structure (High Level)
+## File Structure
 src/
 ├── Components/
-│   ├── Dashboard.jsx
-│   ├── Deposit.jsx
-│   ├── Withdraw.jsx
-│   ├── Balance.jsx
-│   ├── MiniStatement.jsx
-│   └── PinScreen.jsx
+│ ├── PinScreen.jsx
+│ ├── Dashboard.jsx
+│ ├── Deposit.jsx
+│ ├── Withdraw.jsx
+│ ├── Balance.jsx
+│ └── MiniStatement.jsx
 ├── redux/
-│   ├── store.js
-│   └── reducers.js
-├── App.jsx
-└── index.js
-
-🔹 How to Run the Project
-
-Clone the repository:
-
-git clone https://github.com/Safin-Sulthan/mini-atm-react-redux.git
+│ ├── store.js
+│ └── reducers.js
+├── assets/
+└── App.jsx
 
 
-Navigate to the project directory:
+---
 
-cd mini-atm-react-redux
+## 🔹 Notable Implementation Detail
 
+During development, I identified and fixed a **layout responsibility issue** where a parent component was incorrectly controlling screen centering.  
+This was resolved by refactoring the CSS so that:
 
-Install dependencies:
+- Navigation/controller components handle screen logic only
+- Individual screens manage their own layout and positioning
 
-npm install
+This improved UI consistency and prevented modal-like behavior across screens.
 
+---
 
-Start the application:
+## 🔹 Limitations (Intentional)
 
-npm start
+- Single-user ATM simulation
+- No backend or database
+- No routing (React Router not used)
+- No authentication persistence
 
-🔹 Learning Outcome:
+These limitations were intentional to keep the project **focused on learning core concepts**.
 
-This project helped me understand:
+---
 
-How to manage shared application state using Redux
+## 🔹 Future Improvements
 
-How React re-renders UI based on state changes
+- Add multiple account support
+- Add proper routing with React Router
+- Improve input validation and error handling
+- Replace alert messages with UI notifications
+- Enhance responsiveness and animations
 
-How to design clean and predictable UI logic
+---
 
-How to structure a small-to-medium React project
+## 🔹 Project Level
 
-🔹 Future Enhancements:
+- **Level:** Beginner / Fresher
+- **Type:** First React + Redux project
+- **Application Type:** Single-page, single-account ATM simulation
+- **Purpose:** Learning + Interview Portfolio Project
 
-Persist account data using localStorage
+---
 
-Create reusable UI components
+## 🔹 Author
 
-Improve accessibility and responsiveness
+**Saffu**  
+M.Sc. Artificial Intelligence & Data Science  
+Aspiring Frontend / MERN Stack Developer
 
-👤 Author
+---
 
-Safin Sulthan
-Frontend Developer (React)
-GitHub: https://github.com/Safin-Sulthan
-=======
-# React + Vite
+## 🔹 Note
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 121a0b3 (v1: Core Mini ATM app built with React and Redux)
+This project is intentionally kept simple to demonstrate strong fundamentals rather than advanced or production-level optimizations.
