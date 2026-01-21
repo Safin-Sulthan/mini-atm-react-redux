@@ -1,0 +1,81 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-card {
+  background-color: rgba(57, 52, 52, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.page-card-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.page-card-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.page-card-header h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.page-card-header p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.page-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-button {
+  width: 100%;
+  height: 44px;
+  max-width: 180px;
+  background-color: #2564eb7a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+.page-button:hover {
+  background-color: #234acd;
+}
+
+.page-footer {
+  margin-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.credits {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+  color: whitesmoke;
+background-color: rgba(0, 0, 0, 0.059);
+}

@@ -3,16 +3,19 @@ import '../Components/PinScreen.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import atmGif from '../assets/atm-animation.gif';
-export default function PinScreen() {
+export default function PinScreen({ setShowCreateAccount }) {
   const atm_pin = useSelector((state) => state.user.pin);
   const dispatch = useDispatch();
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState('');
 
   function validatePin() {
     if (Number(password) === atm_pin) {
       dispatch({ type: 'LOGIN' });
     } else {
-      alert('****INCORRECT PIN****');
+      setMessage('INCORRECT PIN');
+      setMessageType('error');
     }
   }
 
@@ -40,6 +43,16 @@ export default function PinScreen() {
           <button className="login-button" onClick={validatePin}>
             Login
           </button>
+          {message && <p className={`message ${messageType}`}>{message}</p>}
+          <p className="toggle-text">
+            Don't have ATM Account?{' '}
+            <span
+              className="toggle-link"
+              onClick={() => setShowCreateAccount(true)}
+            >
+              Create Account
+            </span>
+          </p>
         </div>
       </div>
     </div>

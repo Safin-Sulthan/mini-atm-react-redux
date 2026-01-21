@@ -11,10 +11,10 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
 }
 .card-header {
   padding-top: 14px;
@@ -78,7 +78,9 @@ border-radius: 12px;
   padding-top: 14px;
   padding-bottom: 14px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .login-button {
   width: 100%;
