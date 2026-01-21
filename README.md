@@ -124,9 +124,9 @@ These limitations were intentional to keep the project **focused on learning cor
 
 ## 🔹 Author
 
-**Saffu**  
+**Safin Sulthan
 M.Sc. Artificial Intelligence & Data Science  
-Aspiring Frontend / MERN Stack Developer
+Aspiring Frontend Developer
 
 ---
 
